@@ -48,7 +48,7 @@ class SoundState extends State<Sound> {
     _pool = Soundpool.fromOptions(options: SoundpoolOptions(maxStreams: 6));
     for (var value in _SOUNDS) {
       scheduleMicrotask(() async {
-        final data = await rootBundle.load('assets/audios/$value');
+        final data = await rootBundle.load('packages/flutter_tetris/assets/audios/$value');
         _soundIds[value] = await _pool.load(data);
       });
     }
