@@ -1,8 +1,8 @@
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:tetris/gamer/gamer.dart';
-import 'package:tetris/generated/l10n.dart';
-import 'package:tetris/material/audios.dart';
-import 'package:tetris/panel/page_portrait.dart';
+import '../gamer/gamer.dart';
+import '../generated/l10n.dart';
+import '../material/audios.dart';
+import '../panel/page_portrait.dart';
 import 'package:flutter/material.dart';
 import 'gamer/keyboard.dart';
 

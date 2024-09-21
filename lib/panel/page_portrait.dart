@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tetris/main.dart';
-import 'package:tetris/panel/controller.dart';
-import 'package:tetris/panel/screen.dart';
-
-import '../tetris.dart';
-
+import '../flutter_tetris.dart';
+import '../panel/controller.dart';
+import '../panel/screen.dart';
 part 'page_land.dart';
 
 class PagePortrait extends StatelessWidget {

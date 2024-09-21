@@ -1,37 +1,39 @@
-#### English introduction
+<!--
+This README describes the package. If you publish this package to pub.dev,
+this README's contents appear on the landing page for your package.
 
-Please view [README_EN](https://github.com/boyan01/flutter-tetris/blob/master/README_EN.md)
+For information about how to write a good package README, see the guide for
+[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
 
-# Flutter俄罗斯方块
-<a href="https://github.com/Solido/awesome-flutter"><img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" /></a> [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) [![LICENSE](https://img.shields.io/badge/license-NPL%20(The%20996%20Prohibited%20License)-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
+For general information about developing packages, see the Dart guide for
+[creating packages](https://dart.dev/guides/libraries/create-library-packages)
+and the Flutter guide for
+[developing packages and plugins](https://flutter.dev/developing-packages).
+-->
 
----
+TODO: Put a short description of the package here that helps potential users
+know whether this package might be useful for them.
 
-使用Flutter开发的俄罗斯方块游戏。支持 **Android**, **iOS**, **Windows**, **mac**, **Linux** 以及 **web**.
+## Features
 
-参考来源于 [vue-tetris](https://github.com/Binaryify/vue-tetris) 。
+TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## 如何开始
+## Getting started
 
-* 自行编译
+TODO: List prerequisites and provide or point to information on how to
+start using the package.
 
-  安装[Flutter](https://flutter.io/docs/get-started/install)
+## Usage
 
-  在命令行输入：`flutter run --profile`
+TODO: Include short and useful examples for package users. Add longer examples
+to `/example` folder.
 
-* 前往[Release](https://github.com/boyan01/flutter-tetris/releases) 下载 Apk/macOS/Windows 可执行文件。
+```dart
+const like = 'sample';
+```
 
-* 或者前往 [https://boyan01.github.io/flutter-tetris](https://boyan01.github.io/flutter-tetris/#/) 体验 Web 版本
+## Additional information
 
-## 效果预览
-
-![效果预览](./_preview/game_gif.gif)
-
-支持横屏模式
-
-![横屏](./_preview/screen_land.jpg)
-
-
-## 其他
-
-MIT with 996 License
+TODO: Tell users more about the package: where to find more information, how to
+contribute to the package, how to file issues, what response they can expect
+from the package authors, and more.
