@@ -13,7 +13,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   overlay_support: ^1.2.1
-  soundpool: ^2.3.0
+  audioplayers: ^6.5.1
 
 dev_dependencies:
   flutter_test:

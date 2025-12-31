@@ -1,8 +1,7 @@
 import 'dart:async';
 
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:soundpool/soundpool.dart';
 
 class Sound extends StatefulWidget {
   final Widget child;
@@ -19,45 +18,28 @@ class Sound extends StatefulWidget {
   }
 }
 
-const _SOUNDS = [
-  'clean.mp3',
-  'drop.mp3',
-  'explosion.mp3',
-  'move.mp3',
-  'rotate.mp3',
-  'start.mp3'
-];
-
 class SoundState extends State<Sound> {
-  late Soundpool _pool;
-
-  final _soundIds = Map<String, int>();
+  late AudioPlayer _player;
 
   bool mute = false;
 
   void _play(String name) {
-    final soundId = _soundIds[name];
-    if (soundId != null && !mute) {
-      _pool.play(soundId);
+    if (!mute) {
+      _player.play(AssetSource('assets/audios/$name'));
     }
   }
 
   @override
   void initState() {
     super.initState();
-    _pool = Soundpool.fromOptions(options: SoundpoolOptions(maxStreams: 6));
-    for (var value in _SOUNDS) {
-      scheduleMicrotask(() async {
-        final data = await rootBundle.load('packages/flutter_tetris/assets/audios/$value');
-        _soundIds[value] = await _pool.load(data);
-      });
-    }
+    _player = AudioPlayer();
+    _player.setReleaseMode(ReleaseMode.stop);
   }
 
   @override
   void dispose() {
+    _player.dispose();
     super.dispose();
-    _pool.dispose();
   }
 
   @override
